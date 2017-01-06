@@ -1,0 +1,22 @@
+{
+  "name": "nyr",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": "cli.js",
+  "repository": "simonkberg/nyr",
+  "author": "Simon Kjellberg <simon.kjellberg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test",
+    "test:npm": "node test/npm",
+    "test:yarn": "node test/yarn"
+  },
+  "engine": {
+    "node": ">=6"
+  },
+  "devDependencies": {
+    "@simonkberg/eslint-config": "^3.0.0",
+    "debug": "^2.6.0",
+    "eslint": "^3.12.2"
+  }
+}
