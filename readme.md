@@ -77,5 +77,5 @@ you need something more extensive!
 [npm]: https://docs.npmjs.com/cli/npm
 [Yarn]: https://yarnpkg.com/
 [yarn-or-npm]: https://www.npmjs.com/package/yarn-or-npm
-[MIT]: ./License
+[MIT]: ./license
 [Simon Kjellberg]: mailto:simon.kjellberg@gmail.com
