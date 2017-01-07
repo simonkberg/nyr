@@ -1,6 +1,6 @@
 {
   "name": "nyr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tiny helper that knows if you are running a script via npm or Yarn, to let you chain your commands for either.",
   "main": "index.js",
   "bin": "cli.js",
