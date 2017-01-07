@@ -1,11 +1,19 @@
 {
   "name": "nyr",
   "version": "0.0.1",
+  "description": "A tiny helper that knows if you are running a script via npm or Yarn, to let you chain your commands for either.",
   "main": "index.js",
   "bin": "cli.js",
   "repository": "simonkberg/nyr",
   "author": "Simon Kjellberg <simon.kjellberg@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "npm",
+    "yarn",
+    "run",
+    "scripts",
+    "npm-yarn-run"
+  ],
   "scripts": {
     "test": "node test",
     "test:npm": "node test/npm",
@@ -18,5 +26,9 @@
     "@simonkberg/eslint-config": "^3.0.0",
     "debug": "^2.6.0",
     "eslint": "^3.12.2"
-  }
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ]
 }
