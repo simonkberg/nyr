@@ -17,7 +17,8 @@
   "scripts": {
     "test": "node test",
     "test:npm": "node test/npm",
-    "test:yarn": "node test/yarn"
+    "test:yarn": "node test/yarn",
+    "start": "DEBUG=nyr node ./index.js"
   },
   "engine": {
     "node": ">=6"
