@@ -1,5 +1,5 @@
 const {
-  env: { _: bin, DEBUG },
+  env: { npm_execpath: bin, DEBUG },
   argv,
   cwd,
 } = process
@@ -14,8 +14,8 @@ module.exports = {
   bin,
   args,
   cwd: cwd(),
-  isYarn: bin.endsWith('yarn'),
-  isNPM: bin.endsWith('npm'),
+  isYarn: bin.endsWith('yarn.js'),
+  isNPM: bin.endsWith('npm-cli.js'),
 }
 
 if (DEBUG === 'nyr') {
