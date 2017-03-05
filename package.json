@@ -22,7 +22,7 @@
     "start": "DEBUG=nyr node ./index.js"
   },
   "engine": {
-    "node": ">=6"
+    "node": ">=4"
   },
   "devDependencies": {
     "@simonkberg/eslint-config": "^5.0.0",

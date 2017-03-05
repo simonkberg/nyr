@@ -1,5 +1,4 @@
-const { spawn } = require('child_process')
-const { assign } = Object
+const spawn = require('child_process').spawn
 const options = {
   cwd: process.cwd(),
   stdio: 'inherit',
@@ -7,12 +6,7 @@ const options = {
 
 const run = name => new Promise((resolve, reject) => {
   const args = ['run', `test:${name}`]
-  const opts = assign({}, options, {
-    env: assign({}, process.env, {
-      _: name,
-    }),
-  })
-  const child = spawn(name, args, opts)
+  const child = spawn(name, args, options)
 
   child.on('error', err => reject(err))
   child.on('exit', code =>
