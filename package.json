@@ -15,6 +15,7 @@
     "npm-yarn-run"
   ],
   "scripts": {
+    "pretest": "eslint \"*.js\" \"test/*.js\"",
     "test": "node test",
     "test:npm": "node test/npm",
     "test:yarn": "node test/yarn",
