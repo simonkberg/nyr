@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/simonkberg/nyr/compare/v1.0.0...v1.1.0) (2017-03-05)
+
+
+### Features
+
+* **compatibility:** Refactor for compatibility with node v4 (#4) ([14423d6](https://github.com/simonkberg/nyr/commit/14423d6))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/simonkberg/nyr/compare/v0.0.2...v1.0.0) (2017-01-31)
 
