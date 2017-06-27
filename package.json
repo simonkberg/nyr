@@ -15,18 +15,36 @@
     "npm-yarn-run"
   ],
   "scripts": {
-    "pretest": "eslint \"*.js\" \"test/*.js\"",
-    "test": "node test",
+    "test": "yarn prettier:check && eslint . && node test",
     "test:npm": "node test/npm",
     "test:yarn": "node test/yarn",
-    "start": "DEBUG=nyr node ./index.js"
+    "prettier": "prettier --no-semi --single-quote --trailing-comma es5",
+    "prettier:check": "node cli.js prettier -- --list-different '{**/,}*.js'",
+    "prettier:format": "node cli.js prettier -- --write '{**/,}*.js'",
+    "precommit": "lint-staged",
+    "prerelease": "node cli.js test",
+    "release": "standard-version -s"
   },
   "engine": {
     "node": ">=4"
   },
+  "lint-staged": {
+    "*.js": [
+      "node cli.js prettier -- --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@simonkberg/eslint-config"
+  },
   "devDependencies": {
     "@simonkberg/eslint-config": "^7.1.0",
-    "eslint": "^4.1.1"
+    "eslint": "^4.1.1",
+    "husky": "^0.14.1",
+    "lint-staged": "^4.0.0",
+    "prettier": "^1.4.4",
+    "standard-version": "^4.2.0"
   },
   "files": [
     "index.js",
