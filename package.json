@@ -39,7 +39,7 @@
     "extends": "@simonkberg/eslint-config"
   },
   "devDependencies": {
-    "@simonkberg/eslint-config": "^7.1.0",
+    "@simonkberg/eslint-config": "^13.0.0",
     "eslint": "^4.1.1",
     "husky": "^0.14.1",
     "lint-staged": "^4.0.0",
