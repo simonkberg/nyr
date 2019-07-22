@@ -1,3 +1,9 @@
+# DEPRECATED
+
+I don't recommend this package and consider its usage a bad practice. Collaborators to your project should all use the same package manager to guarantee reproducible builds. Instead of supporting ambiguous usage of different package manager for collaboration on your project, you should enforce the usage of just one.
+
+Released versions will continue to work but are unsupported and contain dependencies with known security vulnerabilities. Use at your own risk.
+
 # nyr (npm-yarn-run) [![Travis][build-badge]][build-link] [![npm package][npm-badge]][npm-link]
 
 A tiny helper that knows if you are running a script via [npm] or [Yarn],
